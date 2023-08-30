@@ -23,7 +23,7 @@ def q_3_driver():
 def q_4_driver():
     quote_path = 'Images/quote.png'
     
-    character_count = q4.character_count(quote_path)
+    character_count = q4.count_characters(quote_path)
 
 if __name__ == '__main__':
     q_1_driver()

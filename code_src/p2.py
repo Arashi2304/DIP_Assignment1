@@ -71,14 +71,15 @@ def otsu(path):
     bin_image_between = bin_image_between.reshape(shape)
     between_class_runtime = time.time() - start_time
 
-    print("Runtime of within-class variance method:", within_class_runtime)
-    print("Runtime of between-class variance method:", between_class_runtime)
+    print(f"Runtime of within-class variance method: {within_class_runtime:.6f}")
+    print(f"Runtime of between-class variance method: {between_class_runtime:.6f}")
      
     threshold = np.argmax(between_class_variances)
     binary_image = binarize(image, threshold)
     binary_image = binary_image.reshape(shape)
     plt.figure(2)
     plt.imshow(binary_image, cmap='gray')
+    plt.axis('off')
     plt.title(f'Binarized image with threshold: {threshold}')
     plt.show()
     
