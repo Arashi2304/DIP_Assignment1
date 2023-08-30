@@ -19,3 +19,14 @@ def q_3_driver():
     background_image_path = 'Images/IIScMainBuilding.png'
     
     final_img = q3.superimpose(text_image_path,depth_image_path,background_image_path)
+    
+def q_4_driver():
+    quote_path = 'Images/quote.png'
+    
+    character_count = q4.character_count(quote_path)
+
+if __name__ == '__main__':
+    q_1_driver()
+    q_2_driver()
+    q_3_driver()
+    q_4_driver()    
