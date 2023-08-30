@@ -10,5 +10,6 @@ def q_1_driver():
 
 def q_2_driver():
     path = 'images\coins.png'
-    b
+    
+    bin_img = q2.otsu(path)
     
