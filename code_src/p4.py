@@ -94,7 +94,7 @@ def connected_components(image):
     return character_count
 
 def count_characters(path):
-    image = io.imread(path, as_gray=True)
+    image = io.imread(path)
     binarized_image = otsu(image)
     total_components = connected_components(binarized_image)
     return total_components 
