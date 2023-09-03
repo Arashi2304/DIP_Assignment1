@@ -70,6 +70,10 @@ def connected_components(image):
         for j in range(image.shape[1]):
             if labelled[i, j] in eq:
                 labelled[i, j] = eq[labelled[i, j]]
+    plt.imshow(labelled, cmap='gray')
+    plt.title('Connected Components')
+    plt.axis('off')
+    plt.show()
     
     character_count = 0
     min_pixel_count = 275
