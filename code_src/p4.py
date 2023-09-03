@@ -74,10 +74,6 @@ def connected_components(image):
     character_count = 0
     min_pixel_count = 275
     
-    punctuation_shapes = {
-        1: ",",  
-        2: ".",  
-    }
         
     for label in np.unique(labelled):
         
