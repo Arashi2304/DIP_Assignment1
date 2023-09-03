@@ -72,7 +72,7 @@ def connected_components(image):
                 labelled[i, j] = eq[labelled[i, j]]
     
     character_count = 0
-    min_pixel_count = 120
+    min_pixel_count = 275
     
     punctuation_shapes = {
         1: ",",  
@@ -90,8 +90,6 @@ def connected_components(image):
             character_count += 1
             
     print("Total characters excluding punctuations:", character_count)
-    #plt.imshow(labelled * 255 / components, cmap='gray')
-    #plt.axis('off')
     
     return character_count
 
